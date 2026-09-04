@@ -51,4 +51,6 @@ print("3-D array dimensions:",arr2.ndim)
 #ndmin argument is used to specify the minimum number of dimensions that the resulting array should have.
 import numpy as np
 arr=np.array([1,2,3,4],ndmin=5)
+arr1=np.array([1,2,3,4],ndmin=10)
 print("Array with minimum dimensions:",arr)
+print("Array with minimum dimensions:",arr1)
