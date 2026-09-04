@@ -1,6 +1,13 @@
-#basic numpy code for the array
-import numpy
-arr=numpy.array([1,2,3,5,6])
+
+
+#ndarray is array object in numpy
+#when a list,tuple or any sequence is passed to the array() function, it is converted into an ndarray object.
+import numpy as np
+arr=np.ndarray([1,2,3,4,5])
+arr1=np.ndarray((2,3,4,4,4,4))
 print(arr)
+print(arr1)
+print(type(arr))
+print(type(arr1))
 #checking the version of numpy
-print(numpy.__version__)
+print(np.__version__)
