@@ -78,3 +78,13 @@ print(arr[-1:-3:-1, -1:-3:-1])
 import numpy as np
 arr = np.array([[[1,2,3,4],[5,6,7,8]],[[9,10,11,12],[13,14,15,16]]])
 print(arr[:,:,-3:-1]) # keeping the dimensions (group and row ) same ,only columns selects two (-3,-2)
+
+#example 5
+import numpy as np
+arr = np.array([[[1,2,3],[4,5,6]],[[7,8,9],[10,11,12]],[[13,14,15],[16,17,18]]])
+print(arr[-2:,-2:,-3:-1]) #the last two groups and their last two rows are selected ,while the columns are -3 and -2(inner-most array)
+
+#example 6
+import numpy as np
+arr = np.array([[1,2,3,4,5],[6,7,8,9,10],[11,12,13,14,15],[16,17,18,19,20]])
+print(arr[-1:-4:-2,::2])#Rows are selected from back (-1 to -4) with step -2 ,selecting rows 3 & 1 ,column with step 2(inner(inside) array)
