@@ -45,4 +45,7 @@ print(arr[0:2, 0:2, 1]) #prints the second element of the first two arrays of th
 #    [[7, 8, 9],       # Group 1
 #     [10, 11, 12]]
 #     ])
+#   2 groups × 2 rows × 3 columns
 
+import numpy as np
+arr=np.array([[[1,2,3],[4,5,6]],[[78,89,100],[100,111,112]]])
