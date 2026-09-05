@@ -88,3 +88,4 @@ print(arr[-2:,-2:,-3:-1]) #the last two groups and their last two rows are selec
 import numpy as np
 arr = np.array([[1,2,3,4,5],[6,7,8,9,10],[11,12,13,14,15],[16,17,18,19,20]])
 print(arr[-1:-4:-2,::2])#Rows are selected from back (-1 to -4) with step -2 ,selecting rows 3 & 1 ,column with step 2(inner(inside) array)
+
