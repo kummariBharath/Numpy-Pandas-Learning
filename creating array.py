@@ -1,4 +1,4 @@
-"""
+
 #ndarray is array object in numpy
 #when a list,tuple or any sequence is passed to the array() function, it is converted into an ndarray object.
 import numpy as np
@@ -18,7 +18,7 @@ import numpy as np
 arr=np.array(44)
 print(arr)
 
-"""
+
 #1-D array is an array that has 0-D arrays as its elements
 import numpy as np
 arr=np.array([1,2,3,4,5])
