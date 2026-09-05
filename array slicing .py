@@ -73,3 +73,8 @@ import numpy as np
 arr = np.array([[1,2,3],[4,5,6],[7,8,9]])
 print(arr[-1:-3:-1, -1:-3:-1])
 #the row slice from back to first -1 to -3 ,selecting rows 2 and 1;the column slice similarly selecting the columns 2 and 1(0 is excluded)
+
+#example 4
+import numpy as np
+arr = np.array([[[1,2,3,4],[5,6,7,8]],[[9,10,11,12],[13,14,15,16]]])
+print(arr[:,:,-3:-1]) # keeping the dimensions (group and row ) same ,only columns selects two (-3,-2)
