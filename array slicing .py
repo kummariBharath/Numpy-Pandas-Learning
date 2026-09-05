@@ -20,5 +20,11 @@ print(arr1[-1:-10:-2])# Slice the array from the end to the start with step -2
 print(arr1[::-1])#reverse the array using slicing
 print(arr1[::-2])#reverse the array using slicing with step -2
 
+#Slicing on 2-d array
+import numpy as np
+arr=np.array([[1,2,3,4,5],[6,7,8,9,10]])
+print(arr[1,1:4]) #slice the second row from index 1 to index 4
+print(arr[0:2, 2]) #slice the first two rows from index 2 where index 2 is the printing of the third column
+
 
 
