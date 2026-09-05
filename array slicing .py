@@ -26,6 +26,6 @@ arr=np.array([[1,2,3,4,5],[6,7,8,9,10]])
 print(arr[1,1:4]) #slice the second row from index 1 to index 4
 print(arr[0:2, 2]) #slice the first two rows from index 2 where index 2 is the printing of the third column
 print(arr[0:2, 1:4]) #slice the first two rows from index 1 to index 4 where index 1 to index 4 is the printing of the second column to the fourth column
-
+print(arr[-3:-1, -4:-1]) #slice the first two rows from index 1 to index 4 where index 1 to index 4 is the printing of the second column to the fourth column using negative slicing
 
 
