@@ -27,5 +27,12 @@ print(arr[1,1:4]) #slice the second row from index 1 to index 4
 print(arr[0:2, 2]) #slice the first two rows from index 2 where index 2 is the printing of the third column
 print(arr[0:2, 1:4]) #slice the first two rows from index 1 to index 4 where index 1 to index 4 is the printing of the second column to the fourth column
 print(arr[-3:-1, -4:-1]) #slice the first two rows from index 1 to index 4 where index 1 to index 4 is the printing of the second column to the fourth column using negative slicing
+print(arr[-2:,-4:-1:1])#starts from the second last row to the last row and slice from the second column to the fourth column with step 1
 
+
+#slicing on 3-d array
+import numpy as np 
+arr=np.array([[[1,2,3],[4,5,6]],[[7,8,9],[10,11,12]]])
+print(arr[0,1,1]) #prints the second element of the second array of the first array of the first dimension 
+print(arr[0:2, 0:2, 1]) #prints the second element of the first two arrays of the first two arrays of the first dimension
 
