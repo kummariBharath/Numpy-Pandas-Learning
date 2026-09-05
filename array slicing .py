@@ -92,4 +92,14 @@ print(arr[-1:-4:-2,::2])#Rows are selected from back (-1 to -4) with step -2 ,se
 #example 7
 import numpy as np
 arr = np.array([[[1,2,3],[4,5,6]],[[7,8,9],[10,11,12]]])
-print(arr[0,::-1,:])    
+print("example 6",arr[0,::-1,:]) #selecting first dimesnion(group),then reversing rows in group 1 ,keeping the column same
+
+#example 8
+import numpy as np
+arr = np.array([[[1,2,3],[4,5,6]],[[7,8,9],[10,11,12]]])
+print("example 8",arr[0,:,::-1]) #selecting first dimesnion(group),then keeping the rows inside group same,reversing the columns(array(inner))
+
+
+
+
+
