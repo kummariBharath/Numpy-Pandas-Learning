@@ -24,3 +24,5 @@ import numpy as np
 arr=np.array([[1,2,3,4,54],[83,74,95,59,15]])
 print(arr[-1,-1]) # prints the last element of the last row
 
+
+
