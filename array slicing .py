@@ -27,7 +27,7 @@ print(arr[1,1:4]) #slice the second row from index 1 to index 4
 print(arr[0:2, 2]) #slice the first two rows from index 2 where index 2 is the printing of the third column
 print(arr[0:2, 1:4]) #slice the first two rows from index 1 to index 4 where index 1 to index 4 is the printing of the second column to the fourth column
 print(arr[-3:-1, -4:-1]) #slice the first two rows from index 1 to index 4 where index 1 to index 4 is the printing of the second column to the fourth column using negative slicing
-print(arr[-2:,-4:-1:1])#starts from the second last row to the last row and slice from the second column to the fourth column with step 1
+print("ANS",arr[-2:,-4:-1:1])#starts from the second last row to the last row and slice from the second column to the fourth column with step 1
 
 
 #slicing on 3-d array
@@ -49,3 +49,16 @@ print(arr[0:2, 0:2, 1]) #prints the second element of the first two arrays of th
 
 import numpy as np
 arr=np.array([[[1,2,3],[4,5,6]],[[78,89,100],[100,111,112]]])
+print("everything is printed",arr[:,:,:]) #everything is printed
+print("First group Result",arr[0,:,:]) #First group Result:[[1, 2, 3],[4, 5, 6]]
+print("Last group using negative index",arr[-1,:,:])#Last group using negative index
+print("All groups, first row",arr[:,0,:])
+print("All groups, all rows, first 2 columns",arr[:,:,:2])
+print(arr[::-1])
+
+#examples
+import numpy as np
+arr = np.array([[1,2,3,4,5],[6,7,8,9,10]])
+print(arr[::-1,:]) #reverse direction of dimension only
+                   #result:[[ 6  7  8  9 10] [ 1  2  3  4  5]]
+print(arr[::-1,::-1])#reverse direction of dimension(rows) and reverses the inner rows(columns)
