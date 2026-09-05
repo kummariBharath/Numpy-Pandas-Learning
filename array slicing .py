@@ -56,9 +56,20 @@ print("All groups, first row",arr[:,0,:])
 print("All groups, all rows, first 2 columns",arr[:,:,:2])
 print(arr[::-1])
 
-#examples
+#example1
 import numpy as np
 arr = np.array([[1,2,3,4,5],[6,7,8,9,10]])
-print(arr[::-1,:]) #reverse direction of dimension only
+print(arr[::-1,:]) #reverse the row order
                    #result:[[ 6  7  8  9 10] [ 1  2  3  4  5]]
-print(arr[::-1,::-1])#reverse direction of dimension(rows) and reverses the inner rows(columns)
+print(arr[::-1,::-1])#reverse row orderr and reverses the inner rows(columns)
+
+#example 2
+import numpy as np
+arr = np.array([[[1,2,3],[4,5,6]],[[7,8,9],[10,11,12]],[[13,14,15],[16,17,18]]])
+print(arr[::2,:,:]) #starts with outer group 0 with step 2 selects the group 1 and 2 ,while rows and columns remain same
+
+#example 3
+import numpy as np
+arr = np.array([[1,2,3],[4,5,6],[7,8,9]])
+print(arr[-1:-3:-1, -1:-3:-1])
+#the row slice from back to first -1 to -3 ,selecting rows 2 and 1;the column slice similarly selecting the columns 2 and 1(0 is excluded)
