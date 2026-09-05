@@ -36,3 +36,13 @@ arr=np.array([[[1,2,3],[4,5,6]],[[7,8,9],[10,11,12]]])
 print(arr[0,1,1]) #prints the second element of the second array of the first array of the first dimension 
 print(arr[0:2, 0:2, 1]) #prints the second element of the first two arrays of the first two arrays of the first dimension
 
+#arr[dimension1, dimension2, dimension3] 
+#arr[  groups , rows , columns ]
+#arr = np.array([
+#    [[1, 2, 3],       # Group 0
+#     [4, 5, 6]],
+
+#    [[7, 8, 9],       # Group 1
+#     [10, 11, 12]]
+#     ])
+
